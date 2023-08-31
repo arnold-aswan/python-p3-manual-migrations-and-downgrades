@@ -28,6 +28,8 @@ def upgrade() -> None:
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_students_name'), 'students', ['name'], unique=False)
+    
+   
     # ### end Alembic commands ###
 
 
